@@ -16,7 +16,8 @@ ball.color = 'blue';
 ball = new sprite();
 ball.x = 100;
 ball.y = 100;
-ball.w
+ball.w = 50;
+ball
   fill("skyblue");
   stroke("pink")
   strokeWeight(10);
