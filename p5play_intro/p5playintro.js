@@ -13,7 +13,7 @@ function setup() {
   ball.diameter = 40;
   ball.color = 'blue';
   ball.vel.x = 30;
-  ball.vel.
+  ball.vel.y = 0
 
   // ball = new Sprite();
   // ball.x = 100;
