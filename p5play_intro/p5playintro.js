@@ -7,7 +7,8 @@ function setup() {
   strokeWeight(10);
 
   circle(30,30,50);
-  React()
+  React(50,50,100,200);
+  
 
   // Basic shape testing
   // write your codes here
