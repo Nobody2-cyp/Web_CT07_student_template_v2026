@@ -13,12 +13,12 @@ function setup() {
   ball.diameter = 40;
   ball.color = 'blue';
 
-  ball = new Sprite();
-  ball.x = 100;
-  ball.y = 100;
-  ball.w = 50;
-  ball.h = 50;
-  box.color = "green"
+  // ball = new Sprite();
+  // ball.x = 100;
+  // ball.y = 100;
+  // ball.w = 50;
+  // ball.h = 50;
+  // box.color = "green"
 
   fill("skyblue");
   stroke("pink")
@@ -55,7 +55,7 @@ if (ball.y < 0 + ball.diameter / 2 || ball.y > height - ball.diameter / 2) {
 }
 
 
-box.x = mouseX;
-box.y = mouseY;
+// box.x = mouseX;
+// box.y = mouseY;
 
 }
