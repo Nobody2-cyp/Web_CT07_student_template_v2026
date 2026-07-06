@@ -18,7 +18,7 @@ ball.x = 100;
 ball.y = 100;
 ball.w = 50;
 ball.h = 50;
-box.color = 
+box.color = "green"
   fill("skyblue");
   stroke("pink")
   strokeWeight(10);
