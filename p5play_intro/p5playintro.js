@@ -43,5 +43,6 @@ function draw() {
   // write your codes here
 background(240);
 fill(0);
-Text("Ball:  ("+int(ball.x)+", "+ int(ball.y) + ")", 10, 20)
+Text("Ball:  ("+int(ball.x)+", "+ int(ball.y) + ")", 10, 20);
+Text("Mouse:")
 }
