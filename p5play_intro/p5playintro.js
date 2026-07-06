@@ -7,13 +7,13 @@ function setup() {
   background(250); //background color
 
 
-  ball = new sprite();
+  ball = new Sprite();
   ball.x = 100;
   ball.y = 200;
   ball.diameter = 40;
   ball.color = 'blue';
 
-  ball = new sprite();
+  ball = new Sprite();
   ball.x = 100;
   ball.y = 100;
   ball.w = 50;
