@@ -7,18 +7,18 @@ function setup() {
   background(250); //background color
 
 
-ball = new sprite();
-ball.x = 100;
-ball.y = 200;
-ball.diameter = 40;
-ball.color = 'blue';
+  ball = new sprite();
+  ball.x = 100;
+  ball.y = 200;
+  ball.diameter = 40;
+  ball.color = 'blue';
 
-ball = new sprite();
-ball.x = 100;
-ball.y = 100;
-ball.w = 50;
-ball.h = 50;
-box.color = "green"
+  ball = new sprite();
+  ball.x = 100;
+  ball.y = 100;
+  ball.w = 50;
+  ball.h = 50;
+  box.color = "green"
 
   fill("skyblue");
   stroke("pink")
