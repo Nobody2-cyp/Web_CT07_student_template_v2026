@@ -13,7 +13,11 @@ ball.y = 200;
 ball.diameter = 40;
 ball.color = 'blue';
 
-
+ball = new sprite();
+ball.x = 100;
+ball.y = 200;
+ball.diameter = 40;
+ball.color = 'blue';
   fill("skyblue");
   stroke("pink")
   strokeWeight(10);
