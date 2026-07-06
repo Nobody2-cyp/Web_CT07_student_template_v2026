@@ -41,5 +41,6 @@ box.color = "green"
 
 function draw() {
   // write your codes here
-background(240)
+background(240);
+fill(1)
 }
