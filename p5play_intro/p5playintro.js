@@ -3,6 +3,8 @@ function setup() {
   new Canvas(800, 400);
   background(250); //background color
   FileList("skyblue");
+  stroke("pink")
+  
 
   // Basic shape testing
   // write your codes here
