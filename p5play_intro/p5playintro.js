@@ -4,7 +4,7 @@ function setup() {
   background(250); //background color
   FileList("skyblue");
   stroke("pink")
-  
+  strokeWeight(10)
 
   // Basic shape testing
   // write your codes here
