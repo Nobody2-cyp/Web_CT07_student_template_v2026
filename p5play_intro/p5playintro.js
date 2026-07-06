@@ -9,7 +9,7 @@ function setup() {
 
   ball = new sprite();
 ball.x = 100;
-
+ball.y = 200
   fill("skyblue");
   stroke("pink")
   strokeWeight(10);
