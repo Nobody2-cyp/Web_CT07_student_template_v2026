@@ -6,7 +6,7 @@ function setup() {
   stroke("pink")
   strokeWeight(10);
 
-  circle
+  circle()
 
   // Basic shape testing
   // write your codes here
