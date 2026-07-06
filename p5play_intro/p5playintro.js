@@ -7,7 +7,7 @@ function setup() {
   background(250); //background color
 
 
-  ball 
+  ball = new SpeechRecognitionErrorEvent();
   fill("skyblue");
   stroke("pink")
   strokeWeight(10);
