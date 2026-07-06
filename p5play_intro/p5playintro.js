@@ -8,6 +8,7 @@ function setup() {
 
 
   ball = new SpeechRecognitionErrorEvent();
+  
   fill("skyblue");
   stroke("pink")
   strokeWeight(10);
