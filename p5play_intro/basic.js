@@ -40,7 +40,7 @@ console.log("upper primary");
   // write your codes here
 let count = 0
 while (count < 5){
-  console.log("Counter:")
+  console.log("Counter:", count);
 }
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
