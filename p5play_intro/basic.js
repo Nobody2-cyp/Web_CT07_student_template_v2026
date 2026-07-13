@@ -45,6 +45,7 @@ while (count >1){
 }
 groceries.push("")
 groceries.shift()
+groceries
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
