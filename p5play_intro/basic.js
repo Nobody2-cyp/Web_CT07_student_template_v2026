@@ -26,7 +26,7 @@ text(totalsum,67,300)
 
   // --- Exercise: Age category classification ---
   // write your codes here
-let age = 8;
+let age = 60;
 
 if(age<= 9){
   console.log("lower primary");
