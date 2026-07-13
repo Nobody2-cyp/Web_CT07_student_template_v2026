@@ -39,7 +39,9 @@ console.log("upper primary");
   // --- Exercise}: Display odd numbers backward using while loop ---
   // write your codes here
 let count = 0
-while (count < 5)
+while (count < 5){
+  console.log("")
+}
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
