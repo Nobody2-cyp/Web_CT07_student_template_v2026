@@ -10,8 +10,10 @@ console.log("hello!");
 let base;
 let height;
 let area;
+
 base = 10
 height = 5
+area = 10
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
