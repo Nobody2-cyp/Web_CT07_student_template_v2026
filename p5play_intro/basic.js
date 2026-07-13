@@ -21,7 +21,7 @@ let totalsum = 0;
 for(i = 2; i <= 20; i +=2){
   totalsum += i;
 }
-text()
+text(totalsum,)
 
 
   // --- Exercise: Age category classification ---
