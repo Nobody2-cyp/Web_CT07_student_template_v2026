@@ -39,7 +39,7 @@ console.log("upper primary");
   // --- Exercise}: Display odd numbers backward using while loop ---
   // write your codes here
 let count = 19
-while (count < 19){
+while (count ){
   console.log("Counter:", count);
   count++;
 }
