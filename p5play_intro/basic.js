@@ -17,6 +17,7 @@ area = base * height/2
 text(area,100,100)
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
+let totalsum = 
 for(i = 2; i <= 20; i +=2){
 }
   // --- Exercise: Age category classification ---
