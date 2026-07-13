@@ -9,6 +9,7 @@ console.log("hello!");
   // write your codes here
 let base;
 let height;
+let area;
 base = 10
 height = 5
 
