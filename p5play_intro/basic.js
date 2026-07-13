@@ -41,6 +41,7 @@ console.log("upper primary");
 let count = 0
 while (count < 5){
   console.log("Counter:", count);
+  count++;
 }
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
