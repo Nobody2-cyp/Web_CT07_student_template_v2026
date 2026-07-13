@@ -9,7 +9,7 @@ console.log("hello!");
 let base;
 let height;
 base = 10
-
+height = 5
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
 
