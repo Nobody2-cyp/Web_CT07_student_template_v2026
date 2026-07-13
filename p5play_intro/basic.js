@@ -14,7 +14,7 @@ let area;
 base = 10
 height = 5
 area = base * height/2
-text(area)
+text(area,100,100)
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
 
