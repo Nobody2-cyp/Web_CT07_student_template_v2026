@@ -44,6 +44,7 @@ while (count >1){
   count-=2
 }
 groceries.push("")
+pro
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
