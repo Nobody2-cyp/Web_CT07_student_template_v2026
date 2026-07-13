@@ -26,8 +26,12 @@ text(totalsum,67,300)
 
   // --- Exercise: Age category classification ---
   // write your codes here
+let age = 8;
 
-  // --- Exercise: Display odd numbers backward using while loop ---
+if(age<= 9){
+  console.log("lower primary");
+  
+  // --- Exercise}: Display odd numbers backward using while loop ---
   // write your codes here
 
   // --- Exercise: Array operations (groceries) ---
