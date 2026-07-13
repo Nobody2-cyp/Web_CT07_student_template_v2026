@@ -17,7 +17,7 @@ area = base * height/2
 text(area,100,100)
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
-i = 2; 
+i = 2; i <=
   // --- Exercise: Age category classification ---
   // write your codes here
 
