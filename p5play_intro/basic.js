@@ -13,7 +13,7 @@ let area;
 
 base = 10
 height = 5
-area = base 
+area = base * area 
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
