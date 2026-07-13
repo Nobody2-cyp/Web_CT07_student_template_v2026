@@ -48,7 +48,7 @@ groceries.push("orange")
 groceries.push("butter")
 groceries.shift()
 groceries.splice(1,1,"kaya")
-
+groceries.len
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
