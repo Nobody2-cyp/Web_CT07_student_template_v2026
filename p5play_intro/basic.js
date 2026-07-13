@@ -43,6 +43,7 @@ while (count >1){
   console.log("Counter:", count);
   count-=2
 }
+procerie
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
