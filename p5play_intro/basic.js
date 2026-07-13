@@ -30,7 +30,11 @@ let age = 8;
 
 if(age<= 9){
   console.log("lower primary");
-  
+}else if(age<=12){
+console.log("upper primary");
+}else{ 
+  console.log("seconday school");
+}
   // --- Exercise}: Display odd numbers backward using while loop ---
   // write your codes here
 
