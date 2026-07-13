@@ -1,6 +1,7 @@
 function setup() {
   new Canvas(800, 400);
 background(250);
+console.loh()
   // write your codes here
 
   // --- Exercise: Area of Triangle ---
