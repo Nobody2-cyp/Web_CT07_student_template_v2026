@@ -7,6 +7,9 @@ console.log("hello!");
   // --- Exercise: Area of Triangle ---
   // write your codes here
 let base;
+let height;
+base = 10
+
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
 
