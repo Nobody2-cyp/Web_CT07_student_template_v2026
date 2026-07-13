@@ -1,7 +1,7 @@
 function setup() {
   new Canvas(800, 400);
 background(250);
-FileList()
+Fi
 console.log("hello!");
   // write your codes here
 
