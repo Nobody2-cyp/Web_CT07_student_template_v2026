@@ -1,6 +1,7 @@
 function setup() {
   new Canvas(800, 400);
 background(250);
+textSize
 console.log("hello!");
   // write your codes here
 
