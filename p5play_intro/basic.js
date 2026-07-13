@@ -43,9 +43,11 @@ while (count >1){
   console.log("Counter:", count);
   count-=2
 }
-groceries.push("")
+let groceries = ["apple", "bread", "milk"];
+groceries.push("orange")
+groceries.push("butter")
 groceries.shift()
-groceries
+groceries.splice(1,1,"kaya")
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
