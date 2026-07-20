@@ -33,15 +33,15 @@ function setup() {
 }
 
 function draw(){
-        Image(bg, 0, 0, width, height);
-        
-        if (kb.presses('space')) {
-            bird.vel.y = -15;
-            bird.sleeping = false
-            fill("blue");
-            textSize(14);
-            text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
-            text( 'isMoving: ' + bird.isMoving, 10, 40);
-            text('sleeping: ' + bird.sleeping , 10, 60);
-        }
+    Image(bg, 0, 0, width, height);
+    
+    if (kb.presses('space')) {
+        bird.vel.y = -15;
+        bird.sleeping = false
+        fill("blue");
+        textSize(14);
+        text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+        text( 'isMoving: ' + bird.isMoving, 10, 40);
+        text('sleeping: ' + bird.sleeping , 10, 60);
     }
+}
