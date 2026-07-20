@@ -1,1 +1,2 @@
-let bird
+let bird, floor;
+letflap
