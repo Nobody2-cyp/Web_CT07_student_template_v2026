@@ -3,5 +3,5 @@ letflapMidImg, bg, BaseAudioContext;
 
 function preload() {
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
-    bg = loadImage('assets/background-')
+    bg = loadImage('assets/background-day.png')
 }
