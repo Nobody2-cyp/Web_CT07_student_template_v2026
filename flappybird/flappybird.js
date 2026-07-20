@@ -1,5 +1,5 @@
 let bird, floor;
-letflapMidImg, bg;
+let flapMidImg, bg;
 
 function preload() {
     //bird image, background and the floor
