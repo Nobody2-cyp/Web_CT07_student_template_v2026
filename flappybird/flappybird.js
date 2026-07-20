@@ -11,6 +11,6 @@ function setup() {
     bird = new bird = new Sprite();
     bird.x = width / 2;
     bird.y = 200
-    bird
+    bird.width = 30;
     }
 }
