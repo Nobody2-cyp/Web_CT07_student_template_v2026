@@ -6,7 +6,7 @@ function preload() {
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
     bg = loadImage('assets/background-day.png');
     base = loadImage('assets/base.png');
-    
+
 function setup() {
     new Canvas(400, 600);
 
@@ -29,7 +29,10 @@ function setup() {
     bird.height = 30;
     bird.img = flapMidImg
     }
-    function draw(){
+    
+}
+
+function draw(){
         Image(bg, 0, 0, width, height);
         
         if (kb.presses('space')) {
@@ -42,4 +45,3 @@ function setup() {
             text('sleeping: ' + bird.sleeping , 10, 60);
         }
     }
-}
