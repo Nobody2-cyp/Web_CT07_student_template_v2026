@@ -10,6 +10,7 @@ function setup() {
     new Canvas(400, 600);
     bird = new bird = new Sprite();
     bird.x = width / 2;
-    bird.y
+    bird.y = 200
+    bird
     }
 }
