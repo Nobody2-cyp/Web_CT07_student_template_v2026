@@ -16,6 +16,6 @@ function setup() {
     bird.img = flapMidImg
     }
     function draw(){
-        
+        Image(bg, 0, 0, width)
     }
 }
