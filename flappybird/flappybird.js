@@ -8,6 +8,7 @@ function preload() {
     base = loadImage('assets/base.png');
 function setup() {
     new Canvas(400, 600);
-    bird = new bird = new Sprite()
+    bird = new bird = new Sprite();
+    bird
     }
 }
