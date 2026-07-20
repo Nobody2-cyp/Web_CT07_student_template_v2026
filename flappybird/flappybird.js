@@ -1,2 +1,6 @@
 let bird, floor;
-letflap
+letflapMidImg, bg, BaseAudioContext;
+
+function preload() {
+    
+}
