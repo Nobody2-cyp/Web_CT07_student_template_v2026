@@ -21,7 +21,7 @@ function setup() {
     bird.mass = 2;
     bird.drag = 0.02;
     world.gravity.y = 10;
-    bird = new bird = new Sprite();
+    bird = new S = new Sprite();
     bird.x = width / 2;
     bird.y = 200
     bird.width = 30;
