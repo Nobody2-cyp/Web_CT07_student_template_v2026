@@ -10,7 +10,7 @@ function setup() {
     new Canvas(400, 600);
 
 
-    bird
+    bird.collider = "d"
     bird = new bird = new Sprite();
     bird.x = width / 2;
     bird.y = 200
