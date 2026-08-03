@@ -6,7 +6,8 @@ let pipe;
 let topPipe, bottomPipe;
 let gameoverImg;
 let gameoverLabel;
-let startScreenL
+let startScreenLabel;
+let startScrea
 function preload() {
     //bird image, background and the floor
     gameoverImg = loadImage('assets/gameover.png')
