@@ -40,7 +40,7 @@ function setup() {
     floor.height = 125;
     floor.visible = true;
     floor.img = base;
-
+    floor.
 
 
     bird = new Sprite();
