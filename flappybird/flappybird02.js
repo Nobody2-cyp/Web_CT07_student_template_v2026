@@ -9,7 +9,7 @@ let gameoverLabel;
 
 function preload() {
     //bird image, background and the floor
-    gameoverImg = loadImage('asse')
+    gameoverImg = loadImage('assets/gameover.png')
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
     flapUpImg = loadImage('assets/yellowbird-upflap.png');
     flapDownImg = loadImage('assets/yellowbird-downflap.png');
