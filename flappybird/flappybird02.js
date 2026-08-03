@@ -6,6 +6,7 @@ let pipe;
 let topPipe, bottomPipe;
 let gameoverImg;
 let gameoverLabel;
+
 function preload() {
     //bird image, background and the floor
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
