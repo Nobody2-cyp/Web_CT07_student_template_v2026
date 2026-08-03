@@ -10,7 +10,7 @@ let startScreenLabel;
 let startScreemImg;
 function preload() {
     //bird image, background and the floor
-    
+    startScreenImg
     gameoverImg = loadImage('assets/gameover.png')
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
     flapUpImg = loadImage('assets/yellowbird-upflap.png');
