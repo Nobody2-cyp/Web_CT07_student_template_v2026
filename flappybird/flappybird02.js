@@ -52,6 +52,7 @@ function draw(){
 
 
     if (bird.collides(pipeGroup) || bird.collides(floor)){
+        gameover
         gameoverLabel.img = gameoverImg;
     gameoverLabel.layer = 100;
     gameoverLabel.x = camera.x;
