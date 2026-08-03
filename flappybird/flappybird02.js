@@ -56,7 +56,7 @@ function draw(){
     }
     for (let pipe of pipeGroup){
         if (pipe.x < -50){
-            pipe.rempve()
+            pipe.rempve();
         }
     }
     image(bg, 0, 0, width, height);
