@@ -58,7 +58,8 @@ function draw(){
     gameoverLabel.layer = 100;
     gameoverLabel.x = camera.x;
 
-    noLoop
+    noLoop();
+    
     
     bird.x += 3;
     camera.x = bird.x;
