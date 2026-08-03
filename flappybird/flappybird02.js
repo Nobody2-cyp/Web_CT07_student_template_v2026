@@ -62,7 +62,9 @@ startScreenLabel.img = startScreenImg;
 
 function draw(){
 
-    if (kb.presses(''))
+    if (kb.presses('space') || MouseEvent.presses ()){
+
+    }
     if (bird.collides(pipeGroup) || bird.collides(floor)){
         gameoverLabel = new Sprite(width/2, height/2, 192, 42);
         gameoverLabel.img = gameoverImg;
