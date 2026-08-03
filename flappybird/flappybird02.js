@@ -75,58 +75,48 @@ function draw() {
             noLoop();
         }
 
-        
 
 
-
-
-
-
-
-
-
-
-
-    bird.x += 3;
-    camera.x = bird.x;
-    floor.x = bird.x;
-    if (frameCount % 90 === 0) {
-        spawnPipePair();
-    }
-    for (let pipe of pipeGroup) {
-        if (pipe.x < -50) {
-            pipe.remove();
+        bird.x += 3;
+        camera.x = bird.x;
+        floor.x = bird.x;
+        if (frameCount % 90 === 0) {
+            spawnPipePair();
         }
-    }
-    image(bg, 0, 0, width, height);
-    if (frameCount === 1) {
-        spawnPipePair();
-    }
+        for (let pipe of pipeGroup) {
+            if (pipe.x < -50) {
+                pipe.remove();
+            }
+        }
+        image(bg, 0, 0, width, height);
+        if (frameCount === 1) {
+            spawnPipePair();
+        }
 
-    if (kb.presses('space')) {
-        bird.vel.y = -5;
-        bird.sleeping = false
+        if (kb.presses('space')) {
+            bird.vel.y = -5;
+            bird.sleeping = false
 
-    }
+        }
 
-    if (bird.vel.y < 0) {
-        bird.img = flapDownImg
+        if (bird.vel.y < 0) {
+            bird.img = flapDownImg
 
-    }
-    if (bird.vel.y > 0) {
-        bird.img = flapUpImg
+        }
+        if (bird.vel.y > 0) {
+            bird.img = flapUpImg
 
-    }
-    if (bird.vel.y == 0) {
-        bird.img = flapMidImg
+        }
+        if (bird.vel.y == 0) {
+            bird.img = flapMidImg
 
-    }
+        }
 
-    fill("blue");
-    textSize(14);
-    text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
-    text('isMoving: ' + bird.isMoving, 10, 40);
-    text('sleeping: ' + bird.sleeping, 10, 60);
+        fill("blue");
+        textSize(14);
+        text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+        text('isMoving: ' + bird.isMoving, 10, 40);
+        text('sleeping: ' + bird.sleeping, 10, 60);
     }
 
 
