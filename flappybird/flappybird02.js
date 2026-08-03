@@ -67,7 +67,7 @@ function draw() {
         startGame = true;
         startScreenLabel.visible = false;
         bird.collider = 'dynamic'
-        bird.visible = true;
+        bird.visible = true; 
     }
     if (startGame) {
         if (bird.collides(pipeGroup) || bird.collides(floor)) {
