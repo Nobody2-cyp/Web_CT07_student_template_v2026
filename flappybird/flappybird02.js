@@ -20,6 +20,12 @@ function preload() {
     
     pipe = loadImage('assets/pipe-green.png');
 
+
+
+
+
+
+
     
 }
 
