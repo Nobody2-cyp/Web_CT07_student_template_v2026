@@ -50,6 +50,7 @@ function draw(){
     if (bird.collides(pipeGroup) || bird.collides(floor)){
         noLoop();
     }
+    
     bird.x += 3;
     camera.x = bird.x;
     floor.x = bird.x;
