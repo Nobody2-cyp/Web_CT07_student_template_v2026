@@ -66,7 +66,7 @@ function draw(){
         startGame = true;
         startScreenLabel.visible = false;
     }
-    if (startGame)
+    if (startGame){
     if (bird.collides(pipeGroup) || bird.collides(floor)){
         gameoverLabel = new Sprite(width/2, height/2, 192, 42);
         gameoverLabel.img = gameoverImg;
@@ -74,7 +74,7 @@ function draw(){
     gameoverLabel.x = camera.x;
         noLoop();
     }
-    
+}
 
     
 
