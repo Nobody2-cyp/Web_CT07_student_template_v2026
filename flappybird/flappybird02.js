@@ -54,7 +54,7 @@ function draw(){
     if (bird.collides(pipeGroup) || bird.collides(floor)){
         noLoop();
     }
-    
+    gameoverLabel.img
     
     bird.x += 3;
     camera.x = bird.x;
