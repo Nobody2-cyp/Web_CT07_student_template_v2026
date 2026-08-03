@@ -96,7 +96,10 @@ function draw() {
             spawnPipePair();
         }
 
-        if (kb.presses('space')) {
+        if (kb.presses('space')
+        
+        
+        ) {
             bird.vel.y = -5;
             bird.sleeping = false
 
