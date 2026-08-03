@@ -48,7 +48,8 @@ function draw(){
 
 
 
-    bird.x +
+    bird.x += 3;
+    
     image(bg, 0, 0, width, height);
     if (frameCount === 1){
         spawnPipePair();
