@@ -47,7 +47,7 @@ function setup() {
 function draw(){
 
 
-    if (bird.collides(pipeGroup))
+    if (bird.collides(pipeGroup) || bird.collides(floor))
     bird.x += 3;
     camera.x = bird.x;
     floor.x = bird.x;
