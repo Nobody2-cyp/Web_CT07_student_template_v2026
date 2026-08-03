@@ -54,6 +54,7 @@ function draw(){
     if (frameCount % 90 === 0){
         spawnPipePair();
     }
+    for (let pipe of pipeGroup)
     image(bg, 0, 0, width, height);
     if (frameCount === 1){
         spawnPipePair();
