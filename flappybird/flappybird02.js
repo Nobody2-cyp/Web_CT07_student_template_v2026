@@ -78,16 +78,7 @@ function draw() {
 
 
 
-
-
-
-
-
-
-
-
-
-        
+zz
         startGame = true;
         startScreenLabel.visible = false;
     }
