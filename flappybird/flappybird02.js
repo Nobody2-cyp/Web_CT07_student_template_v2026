@@ -8,7 +8,7 @@ let gameoverImg;
 let gameoverLabel;
 let startScreenLabel;
 let startScreenImg;
-
+let startGame = false;
 function preload() {
     //bird image, background and the floor
     startScreenImg = loadImage('assets/message.png')
