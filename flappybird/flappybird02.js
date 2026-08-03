@@ -52,11 +52,12 @@ function draw(){
 
 
     if (bird.collides(pipeGroup) || bird.collides(floor)){
-        noLoop();
-    }
-    gameoverLabel.img = gameoverImg;
+        gameoverLabel.img = gameoverImg;
     gameoverLabel.layer = 100;
     gameoverLabel.x = camera.x;
+        noLoop();
+    }
+    
 
     
 
