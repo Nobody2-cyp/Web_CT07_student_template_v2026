@@ -49,7 +49,7 @@ function draw(){
 
 
     bird.x += 3;
-    Can
+    Cam
     image(bg, 0, 0, width, height);
     if (frameCount === 1){
         spawnPipePair();
