@@ -7,7 +7,7 @@ let topPipe, bottomPipe;
 let gameoverImg;
 let gameoverLabel;
 let startScreenLabel;
-let startScreemImg;
+let startScreenImg;
 function preload() {
     //bird image, background and the floor
     startScreenImg = loadImage('assets/message.png')
