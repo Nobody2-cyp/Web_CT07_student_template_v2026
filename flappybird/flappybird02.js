@@ -55,7 +55,7 @@ function draw(){
         noLoop();
     }
     gameoverLabel.img = gameoverImg;
-    gameoverLabel
+    gameoverLabel.layer 
     
     bird.x += 3;
     camera.x = bird.x;
