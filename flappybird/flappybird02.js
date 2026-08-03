@@ -45,7 +45,7 @@ function setup() {
     bird.drag = 0.02;
     world.gravity.y = 10;
 startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
-startScreenLabel.img = startScreemImg;
+startScreenLabel.img = startScreenImg;
   
 }
     
