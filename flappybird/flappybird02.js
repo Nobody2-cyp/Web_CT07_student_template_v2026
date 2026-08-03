@@ -45,6 +45,10 @@ function setup() {
 
 
 function draw(){
+
+
+
+    bird.x +
     image(bg, 0, 0, width, height);
     if (frameCount === 1){
         spawnPipePair();
