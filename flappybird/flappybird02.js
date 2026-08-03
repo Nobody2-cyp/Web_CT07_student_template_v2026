@@ -51,7 +51,7 @@ function draw(){
     bird.x += 3;
     camera.x = bird.x;
     floor.x = bird.x;
-    
+    if ()
     image(bg, 0, 0, width, height);
     if (frameCount === 1){
         spawnPipePair();
