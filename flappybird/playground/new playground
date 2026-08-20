@@ -9,6 +9,7 @@ function setup() {
 
     digitLabel = new Sprite();
     digitLabel.y = 50;
+    digitLabel.w = 25
 }
 function draw() {
     background("skyblue");
