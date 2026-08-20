@@ -5,7 +5,7 @@ function preload() {
     digitImg = loadImage("assets/7.png");
     let prefix = "assets/";
     let suffix = ".png";
-    
+    let filen
 }
 function setup() {
     new Canvas(400, 600);
