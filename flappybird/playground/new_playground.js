@@ -1,4 +1,4 @@
-let digitImgs;
+let digitImgs =[];
 let digitLabel;
 let score = 7;
 function preload() {
