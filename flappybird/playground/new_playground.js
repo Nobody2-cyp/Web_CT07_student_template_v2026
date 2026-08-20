@@ -11,6 +11,7 @@ function preload() {
         filename = prefix + count + suffix;
         print(filename);
         digitImg = loadImage(filename);
+        digitImgs.push(digitImg);
     }
 }
 function setup() {
