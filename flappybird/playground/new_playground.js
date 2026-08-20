@@ -44,7 +44,7 @@ else if (kb.pressed("down")) {
     score--;
 }
 else if (kb.presses("2")) {
-    score = round(random(0, ));
+    score = round(random(10,99));
 
 
 
