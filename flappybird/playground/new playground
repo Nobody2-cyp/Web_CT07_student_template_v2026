@@ -1,5 +1,6 @@
 let digitImg;
-let digitLabel
+let digitLabel;
+let sco
 function setup() {
     new Canvas(400, 600);
 }
