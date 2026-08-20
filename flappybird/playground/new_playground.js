@@ -44,6 +44,7 @@ score = constrain(score, 0, 9);
 
 }
 function drawScore() {
+    let score
 }
 function moveGroup() {
 }
