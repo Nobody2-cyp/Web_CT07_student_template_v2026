@@ -8,7 +8,7 @@ function setup() {
     new Canvas(400, 600);
 
     digitLabel = new Sprite();
-    d
+    digitLabel.y = 50;
 }
 function draw() {
     background("skyblue");
