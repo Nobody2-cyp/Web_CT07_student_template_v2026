@@ -44,4 +44,6 @@ score = constrain(score, 0, 9);
 
 }
 function drawScore() {
-    
+}
+function moveGroup() {
+}
