@@ -71,6 +71,7 @@ function drawScore() {
 
         offset += 25;
         scoreGroup.add(s);
+        
     }
 }
 function moveGroup() {
