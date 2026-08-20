@@ -33,7 +33,7 @@ function draw() {
     textSize(14);
     text("score: " + score, 50, 50);
     text("frameCount: " + frameCount, 50, 70);
-}
+
 // add keyboard events
 // up arrow to increase score
 // down arrow to decrease score
@@ -46,7 +46,10 @@ else if (kb.pressed("down")) {
 else if (kb.presses("2")) {
 
 
+
 }
+}
+
 function drawScore() {
     let scoreStr = str(score);
     let digitArray = scoreStr.split("");
