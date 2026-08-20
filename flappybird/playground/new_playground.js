@@ -56,6 +56,7 @@ function drawScore() {
 
     // if (score > 10) {
     //     noLoop();
+    let
 }
 function moveGroup() {
 }
