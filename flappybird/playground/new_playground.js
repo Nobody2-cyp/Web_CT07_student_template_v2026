@@ -26,6 +26,7 @@ function setup() {
 function draw() {
     background("skyblue");
     digitLabel.img = digitImgs[score];
+    
 
 // add keyboard events
 // up arrow to increase score
@@ -35,7 +36,7 @@ if (kb.pressed("up")) {
 }
 if (kb.pressed("down")) {
     score--;
-    
+
 }
 score = constrain(score, 0, 9);
 }
