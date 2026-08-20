@@ -43,4 +43,5 @@ if (kb.pressed("down")) {
 score = constrain(score, 0, 9);
 
 }
-
+function drawScore() {
+    
