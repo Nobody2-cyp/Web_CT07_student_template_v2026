@@ -1,4 +1,5 @@
-let digitI
+let digitImg;
+let digitLabel
 function setup() {
     new Canvas(400, 600);
 }
