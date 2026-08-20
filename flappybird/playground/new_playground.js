@@ -35,6 +35,7 @@ if (kb.pressed("up")) {
 }
 if (kb.pressed("down")) {
     score--;
+    
 }
 score = constrain(score, 0, 9);
 }
