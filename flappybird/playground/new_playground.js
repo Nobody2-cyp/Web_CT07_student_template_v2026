@@ -27,7 +27,7 @@ function draw() {
     background("skyblue");
     digitLabel.img = digitImgs[score];
     textSize(14);
-    text()
+    text("score: " + score, 50, 50);
 
 // add keyboard events
 // up arrow to increase score
