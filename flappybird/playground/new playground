@@ -1,6 +1,6 @@
 let digitImg;
 let digitLabel;
-let score = 
+let score = 7;
 function setup() {
     new Canvas(400, 600);
 }
