@@ -28,7 +28,7 @@ function draw() {
     digitLabel.img = digitImgs[score];
     textSize(14);
     text("score: " + score, 50, 50);
-    text("fra")
+    text("frameCount: " + frameCount, 50, 70);
 
 // add keyboard events
 // up arrow to increase score
