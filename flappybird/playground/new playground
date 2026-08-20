@@ -3,4 +3,5 @@ function setup() {
 }
 function draw() {
     background("skyblue");
+    floor.collider = "static";
 }
