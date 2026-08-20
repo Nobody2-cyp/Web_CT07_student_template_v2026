@@ -10,7 +10,7 @@ function setup() {
     digitLabel = new Sprite();
     digitLabel.y = 50;
     digitLabel.w = 25;
-    digit
+    digitLabel
 }
 function draw() {
     background("skyblue");
