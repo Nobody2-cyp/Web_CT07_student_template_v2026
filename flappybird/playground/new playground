@@ -3,6 +3,7 @@ let digitLabel;
 let score = 7;
 function preload() {
     digitImg = loadImage("assets/7.png");
+    let prefix = "assets/";
 }
 function setup() {
     new Canvas(400, 600);
