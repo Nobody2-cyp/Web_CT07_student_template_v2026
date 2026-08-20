@@ -6,7 +6,8 @@ function preload() {
     let prefix = "assets/";
     let suffix = ".png";
     let filename = "";
-    
+
+    let
 }
 function setup() {
     new Canvas(400, 600);
