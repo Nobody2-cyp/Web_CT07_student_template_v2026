@@ -46,7 +46,8 @@ score = constrain(score, 0, 9);
 function drawScore() {
     let scoreStr = str(score);
     let digitArray = scoreStr.split("");
-    print(digitArray);
+    print(digitArray.length);
+    
 }
 function moveGroup() {
 }
