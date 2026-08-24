@@ -167,6 +167,8 @@ function draw() {
       gameoverLabel.x = camera.x;
 
       noLoop(); 
+
+      setTi
     }
 
     // Debug info (optional)
