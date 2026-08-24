@@ -168,7 +168,27 @@ function draw() {
 
       noLoop(); 
 
-      setTi
+      setTimeout(() => {
+        score = 0;
+        startGame = false;
+
+        pipeGroup.removeAll();
+        bird.vel.x = 0;
+        bird.vel.y = 0
+        bird.rotation = 0;
+        bird.collider = "static";
+        bird.collider
+        bird.y = 200;
+
+        gameoverLabel.remove();
+        startScreenLabel.visible = true;
+        startScreenImg.x = bird.x;
+        startScreenLabel.y = height/2;
+
+        loop();
+        }, 2000); 
+
+
     }
 
     // Debug info (optional)
