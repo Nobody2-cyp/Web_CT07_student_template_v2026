@@ -186,7 +186,7 @@ function draw() {
         startScreenLabel.y = height/2;
 
         loop();
-        }, 2000); 
+        }, 3000); 
 
 
     }
