@@ -88,6 +88,8 @@ function draw() {
   // at start of game, press space or mouse to start
   if (kb.presses('space') || mouse.presses()){
     bird.vel.y = -5
+    bird.sleeping = false; 
+    
     startGame = true;
     startScreenLabel.visible = false;
     bird.visible = true;
