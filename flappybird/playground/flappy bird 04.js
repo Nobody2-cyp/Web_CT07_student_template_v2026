@@ -15,7 +15,7 @@ let startScreenImg; // declare variable for image
 let score = 0;
 let numberImages = []; // store number/score images
 let scoreDigits; // group for storing the different numbers
-let flapSoun
+let flapSound, pointSound
 
 function preload() {
     // bird image, background and the floor
