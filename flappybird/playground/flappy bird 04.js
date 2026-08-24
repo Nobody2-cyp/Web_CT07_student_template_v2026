@@ -35,9 +35,10 @@ function preload() {
 
     for (let i = 0; i < 10; i++){
       numberImages[i] = loadImage('assets/' + i +'.png');
-      flapSound = createAudio('assets/sfx_wing.mp3');
-      pointS
+      
     }
+    flapSound = createAudio('assets/sfx_wing.mp3');
+      pointSound = create
 }
 
 function setup() {
