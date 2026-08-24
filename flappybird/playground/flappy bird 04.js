@@ -106,7 +106,7 @@ function draw() {
       bird.vel.y = -5; // which direction do you think this is?
       bird.sleeping = false; // wake up if sleeping
         flapSound.play(); 
-        
+
     }
     
     // Activity: Change image according to flying action/ falling
@@ -149,6 +149,7 @@ function draw() {
       // compare x-coordinates of player and pipes
       if (pipe.passed == false && pipeRightEdge < birdLeftEdge){
         pipe.passed = true;
+        pointSound.play();
         score++; 
       }
     }
