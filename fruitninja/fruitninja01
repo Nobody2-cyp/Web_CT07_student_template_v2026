@@ -13,3 +13,4 @@ function draw(){
     clear();
     Image(dojoBG, 0, 0, width, height);
 }
+let fruitGroup
