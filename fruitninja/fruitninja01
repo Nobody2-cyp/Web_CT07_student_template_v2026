@@ -17,5 +17,7 @@ let fruitGroup
 let fruitTypes = [];
 
 function preload(){
-    let peach = {}
+    let peach = {
+        whole
+    }
 }
