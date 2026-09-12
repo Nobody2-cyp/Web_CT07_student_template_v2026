@@ -18,6 +18,6 @@ let fruitTypes = [];
 
 function preload(){
     let peach = {
-        whole
+        whole: loadImage
     }
 }
