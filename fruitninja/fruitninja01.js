@@ -72,7 +72,7 @@ for (let fruit of fruitGroup){
 function splitFruit(x, y, fruitData){
     let left = new fruitHalves.Sprite(x, y, 20);
     left.image = fruitData.half1;
-    half1.vel.x = -3;
+    left.vel.x = -3;
     half1.vel.y = random(-5, -2);
     half1.rotationSpeed = -5;
     left.life = 30;
