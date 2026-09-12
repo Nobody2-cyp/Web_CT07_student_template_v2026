@@ -60,7 +60,8 @@ for (let fruit of fruitGroup){
 
     if((d < fruit.width/2) + 5){
         fruit.sliced = true;
-        const fx = fruit
+        const fx = fruit.x;
+        const fy = fruit.y;
         fruit.remove();
         break;
     }
