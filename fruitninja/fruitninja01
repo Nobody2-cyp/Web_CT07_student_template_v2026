@@ -28,3 +28,6 @@ function preload(){
     }
     fruitTypes = [peach, watermelon]
 }
+function spawnFruit(){
+    
+}
