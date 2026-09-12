@@ -9,3 +9,4 @@ function setup(){
     world.gravity.y = 10;
 }
 
+funct
