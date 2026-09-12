@@ -14,4 +14,8 @@ function draw(){
     Image(dojoBG, 0, 0, width, height);
 }
 let fruitGroup
-let fruitTypes = []
+let fruitTypes = [];
+
+function preload(){
+    
+}
