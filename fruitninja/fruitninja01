@@ -29,5 +29,6 @@ function preload(){
     fruitTypes = [peach, watermelon]
 }
 function spawnFruit(){
-    let fruitData = random(fruit)
+    let fruitData = random(fruitTypes);
+    
 }
