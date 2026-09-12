@@ -37,8 +37,8 @@ function draw(){
             trail.collider = 'none';
             trail.color = 'blue';
             trail.life = 10;
-            sliceFruit();
-    }
+           
+    } sliceFruit();
 }
 
 function spawnFruit(){
