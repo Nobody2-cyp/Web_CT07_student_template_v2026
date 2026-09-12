@@ -17,5 +17,5 @@ let fruitGroup
 let fruitTypes = [];
 
 function preload(){
-    
+    let peach = {}
 }
