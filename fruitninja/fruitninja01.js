@@ -63,7 +63,7 @@ for (let fruit of fruitGroup){
         const fx = fruit.x;
         const fy = fruit.y;
         fruit.remove();
-        splitFruit(fx, fy, fruit)
+        splitFruit(fx, fy, fruit.type);
         break;
     }
 }
