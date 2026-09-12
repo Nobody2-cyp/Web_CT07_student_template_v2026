@@ -1,5 +1,7 @@
 let dojoBG;
- 
+let fruitGroup
+let fruitTypes = [];
+let trail;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
 }
@@ -7,6 +9,7 @@ function preload(){
 function setup(){
     new Canvas(800,600);
     world.gravity.y = 10;
+    fruitGroup = new Group();
 }
 
 function draw(){
@@ -14,10 +17,14 @@ function draw(){
     Image(dojoBG, 0, 0, width, height);
     if (frameCount %120 === 0){
         spawnFruit();
+        if (mouse.pressing){
+            trail = new Sprite(mouse.x, mouse.y, 7);
+            trail.collider = 'none';
+            trail.color = 'blue';
+            trail.life = 10;
     }
 }
-let fruitGroup
-let fruitTypes = [];
+
 
 function preload(){
     let peach = {
@@ -37,4 +44,14 @@ function spawnFruit(){
     fruit.vel.y = random(-10, -15);
     fruit.vel.x = random(-2, 2);
     fruit.friction = 0;
+}
+function sliceFruit(){
+for (let fruit of fruitGroup){
+    if (fruit.sliced){
+        continue;
+    }
+        fruit.remove();
+        break;
+    }
+}
 }
