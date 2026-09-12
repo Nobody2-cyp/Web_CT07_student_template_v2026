@@ -51,7 +51,9 @@ for (let fruit of fruitGroup){
         continue;
     }
 
-    let d = 
+    let d = dist(mouse.x, mouse.y, fruit.x, fruit.y);
+
+    
         fruit.remove();
         break;
     }
