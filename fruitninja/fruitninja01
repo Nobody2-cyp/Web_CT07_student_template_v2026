@@ -53,7 +53,8 @@ for (let fruit of fruitGroup){
 
     let d = dist(mouse.x, mouse.y, fruit.x, fruit.y);
 
-    if(d )
+    if((d < fruit.width/2) + 5){
+        fruit.sliced = true;
         fruit.remove();
         break;
     }
