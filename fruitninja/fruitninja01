@@ -60,3 +60,4 @@ for (let fruit of fruitGroup){
     }
 }
 }
+}
