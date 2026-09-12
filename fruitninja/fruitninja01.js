@@ -5,12 +5,16 @@ let trail;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
      let peach = {
-        whole: loadImage('assets/peachwhole.png')
+        whole: loadImage('assets/peachwhole.png'),
+        half1: loadImage('assets/peachhalf.png'),
+        half2: loadImage('assets/peachhalf.png')
     };
     let watermelon = {
-        whole: loadImage('assets/watermelonwhole.png')
+        whole: loadImage('assets/watermelonwhole.png'),
+        half1: loadImage('assets/watermelonhalf.png'),
+        half2: loadImage('assets/watermelonhalf.png')
     }
-    fruitTypes = [peach, watermelon]
+    fruitTypes = [peach, watermelon];
 }
 
 function setup(){
