@@ -14,7 +14,7 @@ function setup(){
 
 function draw(){
     clear();
-    Image(dojoBG, 0, 0, width, height);
+    image(dojoBG, 0, 0, width, height);
     if (frameCount %120 === 0){
         spawnFruit();
         if (mouse.pressing){
