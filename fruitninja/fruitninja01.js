@@ -25,16 +25,6 @@ function draw(){
     }
 }
 
-
-function preload(){
-    let peach = {
-        whole: loadImage('assets/peachwhole.png')
-    };
-    let watermelon = {
-        whole: loadImage('assets/watermelonwhole.png')
-    }
-    fruitTypes = [peach, watermelon]
-}
 function spawnFruit(){
     let fruitData = random(fruitTypes);
     let randomX = random(300, 500)
