@@ -50,6 +50,8 @@ for (let fruit of fruitGroup){
     if (fruit.sliced){
         continue;
     }
+
+    let d = 
         fruit.remove();
         break;
     }
