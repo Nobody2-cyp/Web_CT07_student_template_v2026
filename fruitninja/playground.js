@@ -1,6 +1,6 @@
 let person = {}
 person.eyecolor = "black";
-person.wallet = 1000;
+person.wallet = 67;
 person.race = "Chinese";
 person.gender = "male";
 person.height = 160
