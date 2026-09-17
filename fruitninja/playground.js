@@ -6,6 +6,7 @@ person.race = "Chinese";
 
 
 function setup() {
-  
+
   new Canvas(250,250)
+  background("lightblue")
 }
