@@ -5,6 +5,7 @@ person.race = "Chinese";
 person.gender = "male";
 person.height = 160
 person.age = 67;
+person.citizenship = "China";
 
 
 
