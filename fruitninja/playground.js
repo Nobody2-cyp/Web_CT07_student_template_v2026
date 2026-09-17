@@ -12,7 +12,10 @@ person.height = 160
 person.age = 67;
 person.citizenship = "Singaporean";
 let homeAddress = {
-  
+  street: "123 Main St",
+  city: "Singapore",
+  postalCode: "123456",
+  country: "Singapore"
 }
 
 
