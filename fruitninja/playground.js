@@ -1,5 +1,6 @@
 let person = {
-  eyecolor: "brown",
+  eyecolor: "black",
+  
 }
 person.eyecolor = "black";
 person.wallet = 67;
