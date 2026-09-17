@@ -1,7 +1,9 @@
 let person = {
   eyecolor: "black",
-  
-}
+  wallet; 10000,
+  race: "Malay",
+
+};//js object
 person.eyecolor = "black";
 person.wallet = 67;
 person.race = "Chinese";
