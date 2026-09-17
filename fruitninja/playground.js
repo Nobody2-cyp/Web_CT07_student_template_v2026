@@ -11,7 +11,7 @@ person.gender = "male";
 person.height = 160
 person.age = 67;
 person.citizenship = "Singaporean";
-
+let person = {}
 
 
 function setup() {
