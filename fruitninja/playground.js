@@ -1,4 +1,6 @@
-let person = {}
+let person = {
+  eyecolor: "brown",
+}
 person.eyecolor = "black";
 person.wallet = 67;
 person.race = "Chinese";
