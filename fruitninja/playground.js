@@ -1,6 +1,6 @@
 let person = {
   eyecolor: "black",
-  wallet; 10000,
+  wallet: 10000,
   race: "Malay",
 
 };//js object
