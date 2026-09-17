@@ -15,3 +15,5 @@ function setup() {
   background("cyan")
   print(person);
 }
+
+function draw() {}
