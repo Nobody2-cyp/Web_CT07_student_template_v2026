@@ -12,5 +12,5 @@ function setup() {
 
   new Canvas(250,250)
   background("cyan")
-  print(person)
+  print(person);
 }
