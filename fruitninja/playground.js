@@ -4,7 +4,7 @@ person.wallet = 1000;
 person.race = "Chinese";
 person.gender = "male";
 person.height = 160
-
+person.age = 25
 
 
 
