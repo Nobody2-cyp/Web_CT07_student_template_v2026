@@ -3,7 +3,8 @@ person.eyecolor = "black";
 person.wallet = 1000;
 person.race = "Chinese";
 person.gender = "male";
-person.height
+person.height = 160
+
 
 
 
