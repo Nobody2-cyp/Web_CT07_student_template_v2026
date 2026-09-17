@@ -14,6 +14,7 @@ person.citizenship = "Singaporean";
 let homeAddress = {
   street: "123 Main St",
   city: "Singapore",
+  condo: "The Pinnacle",
   postalCode: "123456",
   country: "Singapore"
 }
