@@ -3,6 +3,7 @@ let fruitGroup
 let fruitTypes = [];
 let trail;
 let fruitHalves;
+let score = 0;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
      let peach = {
@@ -23,11 +24,14 @@ function setup(){
     world.gravity.y = 10;
     fruitGroup = new Group();
     fruitHalves = new Group();
+    textAlign(LEFT, TOP);
+    textSize(28);
 }
 
 function draw(){
     clear();
     image(dojoBG, 0, 0, width, height);
+    drawScore();
     if (frameCount %120 === 0){
         spawnFruit();
          
@@ -39,6 +43,11 @@ function draw(){
             trail.life = 10;
             sliceFruit();
     }
+}
+
+function drawScore(){
+    fill(255, 255, 255);
+    text('Score: ' + score, 20, 20);
 }
 
 function spawnFruit(){
@@ -63,6 +72,7 @@ for (let fruit of fruitGroup){
         fruit.sliced = true;
         const fx = fruit.x;
         const fy = fruit.y;
+        score += 10;
         fruit.remove();
         splitFruit(fx, fy, fruit.type);
         break;
