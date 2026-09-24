@@ -4,7 +4,8 @@ let fruitTypes = [];
 let trail;
 let fruitHalves;
 let score = 0;
-let timer = 30;
+let timer = 60;
+let gameOver = false;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
      let peach = {
@@ -32,18 +33,25 @@ function setup(){
 function draw(){
     clear();
     image(dojoBG, 0, 0, width, height);
-    updateTimer();
-    drawScore();
-    if (frameCount %120 === 0){
-        spawnFruit();
-         
-    }
-    if (mouse.pressing()){
+
+    if (!gameOver) {
+        updateTimer();
+        if (frameCount %120 === 0){
+            spawnFruit();
+        }
+        if (mouse.pressing()){
             trail = new Sprite(mouse.x, mouse.y, 7);
             trail.collider = 'none';
             trail.color = 'blue';
             trail.life = 10;
             sliceFruit();
+        }
+    }
+
+    drawScore();
+
+    if (gameOver) {
+        drawGameOver();
     }
 }
 
@@ -53,9 +61,42 @@ function drawScore(){
     text('Time: ' + Math.ceil(timer), 620, 20);
 }
 
+function drawGameOver(){
+    fill(255, 0, 0);
+    textSize(52);
+    text('Game Over', 280, 260);
+    textSize(24);
+    fill(255, 255, 255);
+    text('Press Space to restart', 270, 330);
+}
+
 function updateTimer(){
     if (frameCount % 60 === 0 && timer > 0){
         timer -= 1;
+    }
+    if (timer <= 0){
+        timer = 0;
+        endGame();
+    }
+}
+
+function endGame(){
+    gameOver = true;
+    fruitGroup.removeAll();
+    fruitHalves.removeAll();
+}
+
+function resetGame(){
+    score = 0;
+    timer = 60;
+    gameOver = false;
+    fruitGroup.removeAll();
+    fruitHalves.removeAll();
+}
+
+function keyPressed(){
+    if (gameOver && key === ' '){
+        resetGame();
     }
 }
 
