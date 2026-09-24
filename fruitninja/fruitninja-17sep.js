@@ -72,7 +72,7 @@ for (let fruit of fruitGroup){
         fruit.sliced = true;
         const fx = fruit.x;
         const fy = fruit.y;
-        score += 10;
+        score += 1;
         fruit.remove();
         splitFruit(fx, fy, fruit.type);
         break;
