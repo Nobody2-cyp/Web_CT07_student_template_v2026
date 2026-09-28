@@ -124,6 +124,7 @@ for (let fruit of fruitGroup){
         fruit.sliced = true;
         const fx = fruit.x;
         const fy = fruit.y;
+        sliceSound.play();
         score += 10;
         fruit.remove();
         splitFruit(fx, fy, fruit.type);
