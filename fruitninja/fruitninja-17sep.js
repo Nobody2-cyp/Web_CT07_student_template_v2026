@@ -40,7 +40,7 @@ function draw(){
 
     if (!gameOver) {
         updateTimer();
-        back
+        backgroundTrack.stop();
         
         if (frameCount %120 === 0){
             spawnFruit();
