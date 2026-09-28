@@ -48,8 +48,8 @@ function draw(){
         if (frameCount %120 === 0){
             for (let i = 0; i < difficultyNumFruits; i++){
             spawnFruit();
+            }
         }
-    }
         if (mouse.pressing()){
             trail = new Sprite(mouse.x, mouse.y, 7);
             trail.collider = 'none';
