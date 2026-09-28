@@ -103,6 +103,9 @@ function resetGame(){
 function keyPressed(){
     if (gameOver && key === ' '){
         resetGame();
+        if (!backgroundTrack.isPlaying()){
+            backgroundTrack.loop();
+        }
     }
 }
 
