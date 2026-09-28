@@ -103,6 +103,7 @@ function resetGame(){
     gameOver = false;
     fruitGroup.removeAll();
     fruitHalves.removeAll();
+    
 }
 
 function keyPressed(){
