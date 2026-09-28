@@ -8,7 +8,8 @@ let timer = 60;
 let gameOver = false;
 let sliceSound;
 let backgroundTrack;
-let difficultyNum
+let difficultyNumFruits = 1;
+let 
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
     sliceSound = loadSound('assets/fruit-ninja-combo.mp3');
