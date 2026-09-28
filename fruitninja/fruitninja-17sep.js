@@ -57,6 +57,7 @@ function draw(){
     if (gameOver) {
         drawGameOver();
     }
+    if (!backgroundTrack.isPlaying()){}
 }
 
 function drawScore(){
