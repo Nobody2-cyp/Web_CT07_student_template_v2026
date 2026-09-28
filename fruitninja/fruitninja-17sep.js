@@ -9,7 +9,7 @@ let gameOver = false;
 let sliceSound;
 let backgroundTrack;
 let difficultyNumFruits = 1;
-let lastdifficultyI
+let lastDifficultyIncrease = 0;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
     sliceSound = loadSound('assets/fruit-ninja-combo.mp3');
