@@ -39,7 +39,7 @@ function setup(){
 function draw(){
     clear();
     image(dojoBG, 0, 0, width, height);
-    if (kb.presses)
+    
 
     if (!gameOver) {
         updateTimer();
