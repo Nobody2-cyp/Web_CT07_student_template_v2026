@@ -6,6 +6,7 @@ let fruitHalves;
 let score = 0;
 let timer = 60;
 let gameOver = false;
+let sliceSound;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
      let peach = {
