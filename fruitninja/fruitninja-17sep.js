@@ -7,7 +7,7 @@ let score = 0;
 let timer = 60;
 let gameOver = false;
 let sliceSound;
-l
+let backgroundTr
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
     sliceSound = loadSound('assets/fruitninja-slice-combo.mp3');
