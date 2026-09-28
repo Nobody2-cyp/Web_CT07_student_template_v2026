@@ -9,7 +9,7 @@ let gameOver = false;
 let sliceSound;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
-    sliceSound = loadSound('');
+    sliceSound = loadSound('assets/fruitninja-slice');
      let peach = {
         whole: loadImage('assets/peachwhole.png'),
         half1: loadImage('assets/peachhalf.png'),
