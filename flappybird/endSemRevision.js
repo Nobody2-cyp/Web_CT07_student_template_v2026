@@ -8,6 +8,7 @@ function preload() {
 }
 function setup() {
     new Canvas(400, 600);
+    
     bird = new Sprite();
     bird.x = width / 2;
     bird.y = height / 2;
@@ -22,5 +23,5 @@ function draw() {
         bird.sleeping = false;
     }
     image(backgroundImg, 0, 0, width, height);
-    
+
 }
