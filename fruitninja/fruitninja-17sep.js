@@ -35,7 +35,7 @@ function setup(){
     textAlign(LEFT, TOP);
     textSize(28);
 
-    
+    lastDifficultyIncrease = 0;
 }
 
 function draw(){
