@@ -21,4 +21,6 @@ function draw() {
         bird.vel.y = -5;
         bird.sleeping = false;
     }
+    image(backgroundImg, 0, 0, width, height);
+    
 }
