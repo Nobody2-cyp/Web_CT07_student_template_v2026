@@ -18,9 +18,10 @@ function setup() {
     bird.height = 30;
 
     bird.img = birdImg;
-    
+
     world.gravity.y = 10;
 }
+
 function draw() {
     if (kb.presses('space')) {
         bird.vel.y = -5;
