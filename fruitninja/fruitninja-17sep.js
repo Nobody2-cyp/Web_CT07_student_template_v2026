@@ -58,11 +58,13 @@ function draw(){
             trail.color = 'blue';
             trail.life = 10;
             sliceFruit();
-            if(lastDifficultyIncrease - timer >= 10){
+            
+        }
+
+        if(lastDifficultyIncrease - timer >= 10){
                 difficultyNumFruits += 1;
                 lastDifficultyIncrease = timer;
             }
-        }
     }
 
     drawScore();
