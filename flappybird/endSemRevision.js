@@ -16,3 +16,6 @@ function setup() {
     bird.img = birdImg;
     world.gravity.y = 10;
 }
+function draw() {
+    
+}
