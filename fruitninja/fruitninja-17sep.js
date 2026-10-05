@@ -58,7 +58,7 @@ function draw(){
             trail.color = 'blue';
             trail.life = 10;
             sliceFruit();
-            if(timer - lastDifficultyIncrease >= 10){
+            if(lastDifficultyIncrease >= 10){
                 difficultyNumFruits += 1;
                 lastDifficultyIncrease = timer;
             }
