@@ -6,4 +6,13 @@ function preload() {
     birdImg = loadImage('assets/bluebird-midflap.png');
     backgroundImg = loadImage('assets/background-night.png');
 }
-
+function setup() {
+    new Canvas(400, 600);
+    bird = new Sprite();
+    bird.x = width / 2;
+    bird.y = height / 2;
+    bird.width = 30;
+    bird.height = 30;
+    bird.img = birdImg;
+    world.gravity.y = 10;
+}
