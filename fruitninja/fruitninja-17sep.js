@@ -58,7 +58,7 @@ function draw(){
             sliceFruit();
             if(timer - lastDifficultyIncrease > 10){
                 difficultyNumFruits += 1;
-                lastDifficultyIncrease = gameTimer;
+                lastDifficultyIncrease = timer;
             }
         }
     }
