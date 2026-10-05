@@ -3,6 +3,6 @@ let backgroundImg;
 let bird;
 function preload() {
     //bird image, background and the floor
-loadImage(background)
+loadImage(background-night.png)
 }
 
