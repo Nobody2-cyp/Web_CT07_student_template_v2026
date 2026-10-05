@@ -34,6 +34,8 @@ function setup(){
     fruitHalves = new Group();
     textAlign(LEFT, TOP);
     textSize(28);
+
+    
 }
 
 function draw(){
