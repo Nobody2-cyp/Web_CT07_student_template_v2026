@@ -64,7 +64,7 @@ function draw(){
         if(lastDifficultyIncrease - timer >= 10){
                 difficultyNumFruits += 1;
                 lastDifficultyIncrease = timer;
-            }
+        }
     }
 
     drawScore();
