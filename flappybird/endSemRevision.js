@@ -1,4 +1,4 @@
-let bird;
+let birdImg;
 let backgroundImg;
 
 function preload() {
