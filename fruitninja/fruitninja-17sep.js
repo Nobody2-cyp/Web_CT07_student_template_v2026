@@ -92,7 +92,7 @@ function drawScore(){
     text('Score: ' + score, 20, 20);
     text('Time: ' + Math.ceil(timer), 620, 20);
 }
-
+ 
 function drawGameOver(){
     fill(255, 0, 0);
     textSize(52);
