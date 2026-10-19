@@ -10,6 +10,7 @@ let sliceSound;
 let backgroundTrack;
 let difficultyNumFruits = 1;
 let lastDifficultyIncrease = 0;
+let lives = 3;
 function preload(){
     dojoBG =loadImage('assets/dojobackground.png')
     sliceSound = loadSound('assets/fruit-ninja-combo.mp3');
@@ -39,11 +40,16 @@ function setup(){
 }
 
 function draw(){
-    live();
+    lives();
 }
 
-function live(){
-    a
+
+
+
+
+    
+            
+        
     clear();
     image(dojoBG, 0, 0, width, height);
     
@@ -79,7 +85,7 @@ function live(){
         backgroundTrack.stop();
     }
     
-}
+
 
 function drawScore(){
     fill(255, 255, 255);
