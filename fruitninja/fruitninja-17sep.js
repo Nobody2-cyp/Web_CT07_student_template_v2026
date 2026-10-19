@@ -39,7 +39,11 @@ function setup(){
 }
 
 function draw(){
-    liv
+    live();
+}
+
+function live(){
+    a
     clear();
     image(dojoBG, 0, 0, width, height);
     
