@@ -17,44 +17,128 @@ let backgroundTrack; // background music
 let difficultyNumFruits = 1; // number of fruits to spawn per interval
 let lastDifficultyIncrease = 0; // last time difficulty increased
 let lives = 3;
-let bomb; 
+let bomb;
 let bombImg;
 let bombGroup;
-let bombExplosionImg; 
+let bombExplosionImg;
+
+function makeBananaFruit() {
+  const g = createGraphics(80, 80);
+  g.clear();
+  g.translate(40, 40);
+  g.noStroke();
+  g.fill(255, 217, 92);
+  g.rotate(PI / 6);
+  g.ellipse(0, 0, 58, 18);
+  g.fill(255, 191, 52);
+  g.ellipse(0, 0, 42, 12);
+  g.fill(120, 86, 28);
+  g.rect(-24, -3, 18, 6, 3);
+  g.rect(6, -3, 18, 6, 3);
+  return g;
+}
+
+function makeBananaHalf(side) {
+  const g = createGraphics(80, 80);
+  g.clear();
+  g.translate(40, 40);
+  g.noStroke();
+  g.fill(255, 217, 92);
+  g.rotate(PI / 6);
+
+  if (side === 'left') {
+    g.beginShape();
+    g.vertex(-30, -10);
+    g.vertex(25, -10);
+    g.vertex(12, 10);
+    g.vertex(-30, 10);
+    g.endShape(CLOSE);
+  } else {
+    g.beginShape();
+    g.vertex(-25, -10);
+    g.vertex(30, -10);
+    g.vertex(30, 10);
+    g.vertex(-12, 10);
+    g.endShape(CLOSE);
+  }
+
+  g.fill(255, 191, 52);
+  g.ellipse(-4, 0, 20, 9);
+  return g;
+}
+
+function makeStarHalf(side) {
+  const g = createGraphics(80, 80);
+  g.clear();
+  g.translate(40, 40);
+  g.noStroke();
+  g.fill(255, 220, 70);
+
+  const points = [
+    [0, -30], [7, -8], [28, -8], [11, 4], [18, 24], [0, 12],
+    [-18, 24], [-11, 4], [-28, -8], [-7, -8]
+  ];
+
+  g.beginShape();
+  if (side === 'left') {
+    for (let i = 0; i < points.length; i++) {
+      const [x, y] = points[i];
+      if (x < 0) g.vertex(x, y);
+    }
+    g.vertex(-1, 28);
+    g.vertex(-1, -28);
+  } else {
+    for (let i = 0; i < points.length; i++) {
+      const [x, y] = points[i];
+      if (x >= 0) g.vertex(x, y);
+    }
+    g.vertex(1, 28);
+    g.vertex(1, -28);
+  }
+  g.endShape(CLOSE);
+
+  return g;
+}
 
 function preload() {
-  dojoBG =loadImage('assets/dojobackground.png');
+  dojoBG = loadImage('assets/dojobackground.png');
 
-  // declare the peach object
   let peach = {
     whole: loadImage('assets/peachwhole.png'),
     half1: loadImage('assets/peachhalf.png'),
+    half2: loadImage('assets/peachhalf.png')
   };
 
-  // declare the watermelon object
   let watermelon = {
     whole: loadImage('assets/watermelonwhole.png'),
     half1: loadImage('assets/watermelonhalf.png'),
+    half2: loadImage('assets/watermelonhalf.png')
   };
 
-  let grape = {
-    whole: loadImage('assets/grapewhole.png'),
-    half1: loadImage('assets/grapehalf.png'),
+  let banana = {
+    whole: makeBananaFruit(),
+    half1: makeBananaHalf('left'),
+    half2: makeBananaHalf('right')
   };
 
-  let banna 
+  let melon = {
+    whole: loadImage('assets/fruitninja_melon.png'),
+    half1: loadImage('assets/fruitninja_melon_half1.png'),
+    half2: loadImage('assets/fruitninja_melon_half2.png')
+  };
 
-  // store the fruit objects into an array
-  fruitTypes = [peach, watermelon];
+  let star = {
+    whole: loadImage('assets/fruitninja_star.png'),
+    half1: makeStarHalf('left'),
+    half2: makeStarHalf('right')
+  };
 
-  // sound effects
+  fruitTypes = [peach, watermelon, banana, melon, star];
+
   sliceSound = loadSound('assets/fruit-ninja-combo.mp3');
   backgroundTrack = loadSound('assets/fruit-ninja-bgtrack.mp3');
 
-
   bombImg = loadImage('assets/fruitninja_bomb.png');
-    //bombExplosionImg = loadImage('assets/fruitninja_bombExplosion.png')
-    //bombExplosionSound = loadSound('assets/fruitninja_bombExplosion.mp3');
 }
 
 
@@ -221,21 +305,19 @@ function sliceFruit() {
 
 // Split a fruit into two halves and animate them
 function splitFruit(x, y, fruitData) {
-  // Create left half
   let left = new fruitHalves.Sprite(x - 10, y, 40, 40);
   left.img = fruitData.half1;
-  left.vel.x = -3; // veer left
+  left.vel.x = -3;
   left.vel.y = random(-5, -2);
   left.rotationSpeed = -5;
-  left.life = 30; // remove after 30 frames
+  left.life = 30;
 
-  // Create right half
   let right = new fruitHalves.Sprite(x + 10, y, 40, 40);
-  right.img = fruitData.half1;
-  right.vel.x = 3; // veer right
+  right.img = fruitData.half2 || fruitData.half1;
+  right.vel.x = 3;
   right.vel.y = random(-5, -2);
   right.rotationSpeed = 5;
-  right.life = 30; // remove after 30 frames
+  right.life = 30;
 }
 
 function SPAWNBOMB() {
