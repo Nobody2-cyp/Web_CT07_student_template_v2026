@@ -117,8 +117,8 @@ function preload() {
 
   let grape = {
     whole: loadImage('assets/fruitninja_grape.png'),
-    half1: loadImage('assets/watermelonwhole.png'),
-    half2: loadImage('assets/watermelonwhole.png'),
+    half1: loadImage('assets/fruitninja_grape.png'),
+    half2: loadImage('assets/fruitninja_grape.png'),
   };
 
   let melon = {
