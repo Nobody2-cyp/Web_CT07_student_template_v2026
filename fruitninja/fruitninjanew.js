@@ -233,6 +233,7 @@ function splitFruit(x, y, fruitData) {
 
 function SPAWNBOMB() {
     let bomb = new Sprite(300, 500);
+    let randomX = random(300, 500); // random X to spawn
     bomb = new bombGroup.Sprite(randomX, height+20, 40); // spawn at bottom
     bomb.image = bombImg;
 
