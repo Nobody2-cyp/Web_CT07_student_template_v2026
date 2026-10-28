@@ -231,7 +231,7 @@ function splitFruit(x, y, fruitData) {
   right.life = 30; // remove after 30 frames
 }
 
-function spawnbomb() {
+function SPAWNBOMB() {
     let bomb = new Spriterandom(300, 500);
    bomb = new bombGroup.Sprite(randomX, height+20, 40); // spawn at bottom
     bomb.image = bombImg;
