@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #1a2440 0%, #090d18 50%, #04070d 100%);
+  color: #f3f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-shell {
+  width: min(96vw, 960px);
+  padding: 1.2rem 1rem 1.6rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: #66d9ff;
+  text-transform: uppercase;
+}
+
+.home-link {
+  color: #dfefff;
+  text-decoration: none;
+  border: 2px solid #66d9ff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.home-link:hover {
+  background: #66d9ff;
+  color: #09111d;
+}
+
+.game-panel {
+  background: rgba(11, 18, 30, 0.9);
+  border: 2px solid rgba(102, 217, 255, 0.5);
+  border-radius: 18px;
+  padding: 0.8rem;
+  box-shadow: 0 0 24px rgba(102, 217, 255, 0.2);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  background: linear-gradient(#0b1120, #060b11);
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.85rem 0.5rem 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #dfe9ff;
+}
+
+.controls p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.15rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #66d9ff, #a96bff);
+  color: #081018;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+@media (max-width: 680px) {
+  .topbar,
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hud {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+}
