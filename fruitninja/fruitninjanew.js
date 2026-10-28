@@ -116,9 +116,9 @@ function preload() {
   };
 
   let banana = {
-    whole: makeBananaFruit(),
-    half1: makeBananaHalf('left'),
-    half2: makeBananaHalf('right')
+    whole: loadImage('assets/watermelonwhole.png'),
+    half1: loadImage('assets/watermelonwhole.png'),
+    half2: loadImage('assets/watermelonwhole.png'),
   };
 
   let melon = {
