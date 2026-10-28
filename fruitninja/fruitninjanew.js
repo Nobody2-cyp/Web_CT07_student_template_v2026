@@ -127,11 +127,7 @@ function preload() {
     half2: loadImage('assets/fruitninja_melon_half2.png')
   };
 
-  let star = {
-    whole: loadImage('assets/fruitninja_star.png'),
-    half1: makeStarHalf('left'),
-    half2: makeStarHalf('right')
-  };
+
 
   fruitTypes = [peach, watermelon, banana, melon, star];
 
