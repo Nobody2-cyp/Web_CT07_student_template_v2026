@@ -167,6 +167,7 @@ function draw(){
     gameStartTime = millis(); // capture time started
     gameTimer = 0;  // timer counter
     difficultyNumFruits = 1; // start with 1 fruit
+    frameSpawnRate = 120;
     lives = 3; // reset lives
   }
 
@@ -203,8 +204,9 @@ function draw(){
   if (frameCount % 150 === 0) {
     //SPAWNBOMB();
   }
-  // Fruit spawn logic: spawn fruits at interval, increase difficulty
-  if (frameCount % 120 === 0) {
+  // Fruit spawn logic: spawn fruits at interval, speed up by 1 frame per score point
+  frameSpawnRate = Math.max(30, 120 - score);
+  if (frameCount % frameSpawnRate === 0) {
     for (let i = 0; i < difficultyNumFruits; i++){
       spawnFruit();
     }
@@ -295,7 +297,7 @@ function sliceFruit() {
       splitFruit(fx, fy, fruit.type); // spawn halves
       score += 1 // increase score by 1
 
-      
+
       
       break; // only slice one fruit per frame
     }
