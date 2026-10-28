@@ -22,7 +22,7 @@ let bombImg;
 let bombGroup;
 let bombExplosionImg; 
 
-function preload(){
+function preload() {
   dojoBG =loadImage('assets/dojobackground.png');
 
   // declare the peach object
@@ -35,7 +35,7 @@ function preload(){
   let watermelon = {
     whole: loadImage('assets/watermelonwhole.png'),
     half1: loadImage('assets/watermelonhalf.png'),
-  }
+  };
 
   // store the fruit objects into an array
   fruitTypes = [peach, watermelon];
@@ -45,7 +45,7 @@ function preload(){
   backgroundTrack = loadSound('assets/fruit-ninja-bgtrack.mp3');
 
 
-    bombImg = loadImage('assets/fruitninja_bomb.png'),
+  bombImg = loadImage('assets/fruitninja_bomb.png');
     //bombExplosionImg = loadImage('assets/fruitninja_bombExplosion.png')
     //bombExplosionSound = loadSound('assets/fruitninja_bombExplosion.mp3');
 }
@@ -112,9 +112,9 @@ function draw(){
     backgroundTrack.stop();
     return;
   }
- if (frameCount % 150 === 0) {
+  if (frameCount % 150 === 0) {
     spawnBOMB();
-    }
+  }
   // Fruit spawn logic: spawn fruits at interval, increase difficulty
   if (frameCount % 120 === 0) {
     for (let i = 0; i < difficultyNumFruits; i++){
@@ -265,5 +265,3 @@ function spawnbomb() {
 //   if (gameTimer - lastDifficultyIncrease >= 15){
 //     difficultyNumFruits += 1;
 //     lastDifficultyIncrease = gameTimer;
-//   }
-// }
