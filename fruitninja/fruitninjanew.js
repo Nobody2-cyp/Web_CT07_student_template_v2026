@@ -22,83 +22,83 @@ let bombImg;
 let bombGroup;
 let bombExplosionImg;
 
-function makeBananaFruit() {
-  const g = createGraphics(80, 80);
-  g.clear();
-  g.translate(40, 40);
-  g.noStroke();
-  g.fill(255, 217, 92);
-  g.rotate(PI / 6);
-  g.ellipse(0, 0, 58, 18);
-  g.fill(255, 191, 52);
-  g.ellipse(0, 0, 42, 12);
-  g.fill(120, 86, 28);
-  g.rect(-24, -3, 18, 6, 3);
-  g.rect(6, -3, 18, 6, 3);
-  return g;
-}
+// function makeBananaFruit() {
+//   const g = createGraphics(80, 80);
+//   g.clear();
+//   g.translate(40, 40);
+//   g.noStroke();
+//   g.fill(255, 217, 92);
+//   g.rotate(PI / 6);
+//   g.ellipse(0, 0, 58, 18);
+//   g.fill(255, 191, 52);
+//   g.ellipse(0, 0, 42, 12);
+//   g.fill(120, 86, 28);
+//   g.rect(-24, -3, 18, 6, 3);
+//   g.rect(6, -3, 18, 6, 3);
+//   return g;
+// }
 
-function makeBananaHalf(side) {
-  const g = createGraphics(80, 80);
-  g.clear();
-  g.translate(40, 40);
-  g.noStroke();
-  g.fill(255, 217, 92);
-  g.rotate(PI / 6);
+// function makeBananaHalf(side) {
+//   const g = createGraphics(80, 80);
+//   g.clear();
+//   g.translate(40, 40);
+//   g.noStroke();
+//   g.fill(255, 217, 92);
+//   g.rotate(PI / 6);
 
-  if (side === 'left') {
-    g.beginShape();
-    g.vertex(-30, -10);
-    g.vertex(25, -10);
-    g.vertex(12, 10);
-    g.vertex(-30, 10);
-    g.endShape(CLOSE);
-  } else {
-    g.beginShape();
-    g.vertex(-25, -10);
-    g.vertex(30, -10);
-    g.vertex(30, 10);
-    g.vertex(-12, 10);
-    g.endShape(CLOSE);
-  }
+//   if (side === 'left') {
+//     g.beginShape();
+//     g.vertex(-30, -10);
+//     g.vertex(25, -10);
+//     g.vertex(12, 10);
+//     g.vertex(-30, 10);
+//     g.endShape(CLOSE);
+//   } else {
+//     g.beginShape();
+//     g.vertex(-25, -10);
+//     g.vertex(30, -10);
+//     g.vertex(30, 10);
+//     g.vertex(-12, 10);
+//     g.endShape(CLOSE);
+//   }
 
-  g.fill(255, 191, 52);
-  g.ellipse(-4, 0, 20, 9);
-  return g;
-}
+//   g.fill(255, 191, 52);
+//   g.ellipse(-4, 0, 20, 9);
+//   return g;
+// }
 
-function makeStarHalf(side) {
-  const g = createGraphics(80, 80);
-  g.clear();
-  g.translate(40, 40);
-  g.noStroke();
-  g.fill(255, 220, 70);
+// function makeStarHalf(side) {
+//   const g = createGraphics(80, 80);
+//   g.clear();
+//   g.translate(40, 40);
+//   g.noStroke();
+//   g.fill(255, 220, 70);
 
-  const points = [
-    [0, -30], [7, -8], [28, -8], [11, 4], [18, 24], [0, 12],
-    [-18, 24], [-11, 4], [-28, -8], [-7, -8]
-  ];
+//   const points = [
+//     [0, -30], [7, -8], [28, -8], [11, 4], [18, 24], [0, 12],
+//     [-18, 24], [-11, 4], [-28, -8], [-7, -8]
+//   ];
 
-  g.beginShape();
-  if (side === 'left') {
-    for (let i = 0; i < points.length; i++) {
-      const [x, y] = points[i];
-      if (x < 0) g.vertex(x, y);
-    }
-    g.vertex(-1, 28);
-    g.vertex(-1, -28);
-  } else {
-    for (let i = 0; i < points.length; i++) {
-      const [x, y] = points[i];
-      if (x >= 0) g.vertex(x, y);
-    }
-    g.vertex(1, 28);
-    g.vertex(1, -28);
-  }
-  g.endShape(CLOSE);
+//   g.beginShape();
+//   if (side === 'left') {
+//     for (let i = 0; i < points.length; i++) {
+//       const [x, y] = points[i];
+//       if (x < 0) g.vertex(x, y);
+//     }
+//     g.vertex(-1, 28);
+//     g.vertex(-1, -28);
+//   } else {
+//     for (let i = 0; i < points.length; i++) {
+//       const [x, y] = points[i];
+//       if (x >= 0) g.vertex(x, y);
+//     }
+//     g.vertex(1, 28);
+//     g.vertex(1, -28);
+//   }
+//   g.endShape(CLOSE);
 
-  return g;
-}
+//   return g;
+// }
 
 function preload() {
   dojoBG = loadImage('assets/dojobackground.png');
