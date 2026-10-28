@@ -113,7 +113,7 @@ function draw(){
     return;
   }
   if (frameCount % 150 === 0) {
-    spawnBOMB();
+    SPAWNBOMB();
   }
   // Fruit spawn logic: spawn fruits at interval, increase difficulty
   if (frameCount % 120 === 0) {
