@@ -36,11 +36,13 @@ function preload() {
     whole: loadImage('assets/watermelonwhole.png'),
     half1: loadImage('assets/watermelonhalf.png'),
   };
-  
+
   let grape = {
     whole: loadImage('assets/grapewhole.png'),
     half1: loadImage('assets/grapehalf.png'),
   };
+
+  let banna 
 
   // store the fruit objects into an array
   fruitTypes = [peach, watermelon];
