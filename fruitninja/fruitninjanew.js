@@ -16,7 +16,11 @@ let backgroundTrack; // background music
 
 let difficultyNumFruits = 1; // number of fruits to spawn per interval
 let lastDifficultyIncrease = 0; // last time difficulty increased
-
+let lives = 3;
+let bomb; 
+let bombImg;
+let bombGroup;
+let bombExplosionImg; 
 
 function preload(){
   dojoBG =loadImage('assets/dojobackground.png');
@@ -39,7 +43,13 @@ function preload(){
   // sound effects
   sliceSound = loadSound('assets/fruit-ninja-combo.mp3');
   backgroundTrack = loadSound('assets/fruit-ninja-bgtrack.mp3');
+
+
+    bombImg = loadImage('assets/fruitninja_bomb.png'),
+    //bombExplosionImg = loadImage('assets/fruitninja_bombExplosion.png')
+    //bombExplosionSound = loadSound('assets/fruitninja_bombExplosion.mp3');
 }
+
 
 function setup(){
   new Canvas(800,600);
@@ -49,6 +59,7 @@ function setup(){
   fruitHalves = new Group(); // group for fruit halves
 }
 
+    
 function draw(){
   clear(); // optional to clear before applying an image.
   image(dojoBG, 0, 0, width, height);
@@ -68,6 +79,7 @@ function draw(){
     gameStartTime = millis(); // capture time started
     gameTimer = 0;  // timer counter
     difficultyNumFruits = 1; // start with 1 fruit
+    lives = 3; // reset lives
   }
 
   // Start screen
@@ -100,7 +112,9 @@ function draw(){
     backgroundTrack.stop();
     return;
   }
-
+ if (frameCount % 150 === 0) {
+    spawnBOMB();
+    }
   // Fruit spawn logic: spawn fruits at interval, increase difficulty
   if (frameCount % 120 === 0) {
     for (let i = 0; i < difficultyNumFruits; i++){
@@ -128,6 +142,7 @@ function draw(){
     if (fruit.y > height + 50) {
       fruit.remove();
       missedFruits += 1;
+      lives -= 1; // decrease lives when a fruit is missed
     }
   }
 
@@ -147,7 +162,15 @@ function draw(){
   text('Score: ' + score, 10, 10);
   text('Missed: ' + missedFruits, 200, 10);
   text('Time: ' + (gameDuration - gameTimer), 400, 10);
+  text('Lives: ' + lives, 600, 10);
+
+  if (lives <= 0) {
+    gameState = 'gameover';
+    backgroundTrack.stop();
+    return;
+  }
 }
+
 
 function spawnFruit(){
   let fruitData = random(fruitTypes); // pick one at random
@@ -206,6 +229,16 @@ function splitFruit(x, y, fruitData) {
   right.vel.y = random(-5, -2);
   right.rotationSpeed = 5;
   right.life = 30; // remove after 30 frames
+}
+
+function spawnbomb() {
+    let bomb = new Spriterandom(300, 500);
+   bomb = new bombGroup.Sprite(randomX, height+20, 40); // spawn at bottom
+    bomb.image = bombImg;
+
+    bomb.vel.y = random(-10, -14);
+    bomb.vel.x = random(-2, 2); // sideways curve
+    bomb.friction = 0;
 }
 
 
