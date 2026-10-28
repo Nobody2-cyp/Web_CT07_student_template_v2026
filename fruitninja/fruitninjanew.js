@@ -129,7 +129,7 @@ function preload() {
 
 
 
-  fruitTypes = [peach, watermelon, banana, melon, star];
+  fruitTypes = [peach, watermelon, grape, melon, star];
 
   sliceSound = loadSound('assets/fruit-ninja-combo.mp3');
   backgroundTrack = loadSound('assets/fruit-ninja-bgtrack.mp3');
