@@ -21,7 +21,7 @@ let bomb;
 let bombImg;
 let bombGroup;
 let bombExplosionImg;
-let frameSpawnRate;
+let frameSpawnRate = 120;
 
 // function makeBananaFruit() {
 //   const g = createGraphics(80, 80);
